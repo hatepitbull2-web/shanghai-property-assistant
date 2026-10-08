@@ -1,0 +1,33 @@
+{
+  "inventory": {
+    "is_synthetic": true,
+    "楼盘": [
+      {
+        "名称": "纯虚构冲突测试盘",
+        "区域": "浦东新区",
+        "状态": "在售中",
+        "采集日期": "2026-10-08",
+        "来源": "虚构源",
+        "展示总价_万元": "1100-1400",
+        "展示面积_平方米": "100-140",
+        "详情": {
+          "参考总价_万元": "700-900",
+          "参考面积段_平方米": "100-140",
+          "销售户型": "3房2厅",
+          "内部佣金": "QA_PRIVATE_COMMISSION_2.5%"
+        }
+      }
+    ]
+  },
+  "customer": {
+    "is_simulation": true,
+    "label": "QA只读样例",
+    "as_of": "2026-10-08",
+    "hard_constraints": {
+      "budget_max_wan": 1000,
+      "bedrooms_min": 3,
+      "commute_max_minutes": 45
+    },
+    "经纪人内部备注": "QA_PRIVATE_NEGOTIATION_FLOOR"
+  }
+}

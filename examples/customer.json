@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "is_simulation": true,
+  "label": "模拟客户：三口之家改善自住",
+  "as_of": "2026-10-08",
+  "purchase_motivation": "改善居住空间，先比较不同区域的取舍；仅为功能演示，非真实客户。",
+  "hard_constraints": {
+    "budget_max_wan": 1800,
+    "area_min_sqm": 100,
+    "area_max_sqm": 190,
+    "bedrooms_min": 3
+  },
+  "preferences": {
+    "districts": ["浦东新区", "普陀区", "闵行区"],
+    "features": ["人车分流", "无连廊"]
+  },
+  "unconfirmed_customer_fields": ["首付可用资金", "可承受月供", "工作地点和通勤上限", "购房资格", "最晚交房日期", "教育和医疗需求", "车位需求", "决策人", "不可接受的缺点"],
+  "max_results": 5,
+  "max_data_age_days": 30
+}

@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "purpose": "数据接入候选与可验证证据；不是已接通数据源清单。",
+  "sources": [
+    {
+      "id": "xiaopang-miniapp",
+      "name": "小胖看房团",
+      "type": "用户已打开的小程序展示信息",
+      "official_web_url": null,
+      "public_api_documentation": null,
+      "bulk_export_verified": false,
+      "status": "沿用本地UI采集；网页/API/导出未验证",
+      "use": "新房营销名、批次、价格、产品特点、认购、图文附件等补充资料",
+      "unknown": ["是否有会员导出或合作数据接口", "是否提供全量批次及撤盘记录", "内容批量再利用和开源再分发的许可"],
+      "next_step": "在可见界面查找官方导出、分享网页或帮助说明；找到公开文档后再对接。保留每项目采集时间及已读模块，不把目录数视为详情完整数。"
+    },
+    {
+      "id": "sh-fgj-presale",
+      "name": "上海市房屋管理局商品房预售许可证查询",
+      "url": "https://fgj.sh.gov.cn/ysxkz/index.html",
+      "type": "政府公开查询",
+      "verified_fields": ["项目名称", "企业名称", "项目地址", "预售许可证号", "发证日期"],
+      "status": "页面与表头已核验，未取得数据行",
+      "bulk_export_verified": false,
+      "next_step": "用真实浏览器验证表格分页与可见导出；以预售证号和备案名匹配营销名称，优先补证号、开发主体与地址。",
+      "limitations": ["文本读取仅返回表头，尚不能判定批量可采", "预售许可不等于当前仍在售或可售库存", "不含销售佣金、客户反馈和完整产品评价"]
+    },
+    {
+      "id": "fangdi",
+      "name": "网上房地产",
+      "url": "https://www.fangdi.com.cn/",
+      "official_identity_evidence": "https://www.fengxian.gov.cn/fgj/fwgl/fcsc/20191211/2650-87fe3fe4-63d2-450e-b6c0-ba903ac07c0d.html",
+      "type": "上海市房地产交易中心公益服务网站",
+      "status": "政府来源确认其身份；本次web打开未成功",
+      "use": "候选的项目、预售、交易状态核验来源",
+      "bulk_export_verified": false,
+      "next_step": "验证公开查询页面可达性；只使用已公开的浏览与文档入口，不依赖猜测的内部接口。"
+    },
+    {
+      "id": "data-shanghai",
+      "name": "上海市公共数据开放平台",
+      "url": "https://data.sh.gov.cn/view/",
+      "documentation": "https://data.sh.gov.cn/assets/data/上海市公共数据开放平台操作指南20250527V3.0.0.pdf",
+      "terms": "https://data.sh.gov.cn/view/footer-nav/",
+      "type": "政府数据下载与API平台",
+      "status": "平台确有下载/API能力，但尚未发现适配本项目的已验证房地产数据集",
+      "use": "后续寻找预售许可、基础设施与公共服务等明确可开放的数据集",
+      "unknown": ["目标数据集实际范围、更新频率、访问条件与协议", "是否包含当前全市在售新房明细"],
+      "next_step": "先定位具体数据集并查看数据字典、样本和协议；平台有API并不代表目标房源全量开放。"
+    },
+    {
+      "id": "fangjia-api",
+      "name": "房价网API",
+      "url": "https://sh.fangjia.com/api/",
+      "documentation": "https://www.fangjia.com/solution/api/doc",
+      "type": "供应商公开授权API产品",
+      "status": "厂商文档已核验，未申请token、未实调、未采购",
+      "verified_documentation_features": ["授权token接入", "按小区ID或城市/区县/小区名定位", "小区均价与走势批量接口单次最多12个小区", "文档该批量接口列最近一年月均价", "产品目录列小区基础、物业、开发商、交通、挂牌等字段"],
+      "use": "小区标准化、基础信息、价格趋势的潜在快速补充",
+      "unknown": ["当前价格和服务可用性", "上海样本覆盖与历史深度", "均价是挂牌/估值/成交何种口径", "客户报告展示和原始数据再分发授权"],
+      "next_step": "在明确授权后用少量已知小区验证准确率、时间和字段口径；不能把均价走势写成真实成交明细，也不能据此承诺三年成交数据。"
+    },
+    {
+      "id": "datafang-api",
+      "name": "数据坊房产数据API",
+      "url": "https://www.datafang.com/api/propertydata",
+      "type": "供应商公开数据产品",
+      "status": "厂商产品页已核验，未调用、未采购",
+      "verified_documentation_features": ["小区基础信息和户型图查询", "按小区与月份查询二手成交记录", "示例字段包含面积、日期、总价与单价"],
+      "use": "用户要求的近三年二手成交数据的候选",
+      "unknown": ["上海实际覆盖、真实成交口径与数据来源", "近三年的完整性和更新延迟", "报价、额度、授权及公开再分发条件"],
+      "next_step": "接入前索取或获取授权样本与字段字典，对已知小区做质量抽检；示例城市不能证明上海可用。"
+    },
+    {
+      "id": "creprice-api",
+      "name": "禧泰数据/全国房价行情数据接口",
+      "url": "https://www.creprice.cn/solution/api_sdk.html",
+      "type": "供应商公开数据产品",
+      "status": "产品页已核验，未调用、未采购",
+      "verified_documentation_features": ["小区房价/房租当前与历史行情", "小区基础信息和标准地址", "地址标准化及坐标"],
+      "use": "基础信息与行情候选备选源",
+      "unknown": ["上海覆盖、历史深度、具体接口协议", "许可和报价", "是否提供逐套真实成交"],
+      "next_step": "与房价网候选择一小样本验证，避免同时引入多个尚未验证的付费依赖。"
+    }
+  ],
+  "collection_priorities": [
+    {"priority": 0, "action": "每个项目保留稳定ID、营销名、备案名、预售批次、数据时间、来源和缺失标识，先消除重复与批次混淆。"},
+    {"priority": 1, "action": "核验官方预售许可页面可分页读取/导出情况，并对现有364目录按证号/地址对齐。"},
+    {"priority": 2, "action": "使用已授权导出或有文档API补标准字段，小程序集中补差异化产品、认购、图文证据。"},
+    {"priority": 3, "action": "新增/改价/售罄的增量更新与变更日志，优先刷新进入推荐的楼盘。"}
+  ],
+  "rights": {
+    "code": "Skill、导入器和本项目代码的开源协议由项目单独确定。",
+    "third_party_data": "网页可见或付费可读不自动表示可以公开重发整库。每种数据要记录读取、报告展示和再分发权限。",
+    "public_package": "默认附字段定义、合成案例和连接器示例；真实采集信息由用户本地加载，数据来源链接保留。"
+  }
+}

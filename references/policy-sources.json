@@ -1,0 +1,119 @@
+{
+  "checked_at": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "scope": "上海普通商品住房政策参考索引。条款按适用日期与对象分开；这份索引未穷尽境外、人才、临港、多子女、继承赠与等特殊情形，不能独立输出最终购房/贷款资格批准。",
+  "sources": [
+    {
+      "id": "sh-2026-75",
+      "title": "关于进一步优化调整本市房地产政策的通知",
+      "document_number": "沪建房管联〔2026〕75号",
+      "url": "https://fgj.sh.gov.cn/qtgw/20260225/6c4c4d2c6f1a41638d98e107c1eb6ca7.html",
+      "publisher": "上海市房屋管理局",
+      "published_at": "2026-02-25",
+      "effective_from": "2026-02-26",
+      "effective_to": null,
+      "topics": ["非沪籍购房资格", "公积金", "房产税"],
+      "verified_summary": "非沪籍家庭及成年单身购买外环内住房的社保/个税门槛降至连续1年；满3年可在既有政策基础上增购1套。持上海居住证满5年者新增全市限购1套路径。成年子女唯一住房的房产税调整另自2026-01-01适用。",
+      "implementation_note": "需结合2025年外环外与单身规则及官方资格核验；不能只凭居住证积分120分判定购房资格。"
+    },
+    {
+      "id": "sh-2025-417",
+      "title": "关于优化调整本市房地产政策措施的通知",
+      "document_number": "沪建房管联〔2025〕417号",
+      "url": "https://fgj.sh.gov.cn/qtgw/20250825/ac8bba5cc87a40ce862ffd011093866f.html",
+      "publisher": "上海市房屋管理局",
+      "published_at": "2025-08-25",
+      "effective_from": "2025-08-26",
+      "effective_to": null,
+      "topics": ["外环外限购", "成年单身", "商贷定价", "公积金提取"],
+      "verified_summary": "符合购房条件的居民家庭在外环外买新房和二手房不限套数；成年单身按家庭执行。商业房贷的利率定价机制不再区分首二套，但每筆利率由银行依风险等条件确定。",
+      "implementation_note": "资格年限需叠加2026年75号新规则；不能预设统一商贷利率。"
+    },
+    {
+      "id": "sh-2024-502",
+      "title": "关于进一步优化本市房地产市场政策措施的通知",
+      "document_number": "沪建房管联〔2024〕502号",
+      "url": "https://fgj.sh.gov.cn/qtgw/20240929/e66e5975328e411ca736811e67bee559.html",
+      "publisher": "上海市房屋管理局",
+      "published_at": "2024-09-29",
+      "effective_from": "2024-10-01",
+      "effective_to": null,
+      "topics": ["商贷首付", "历史规则"],
+      "verified_summary": "首套商业住房贷款政策最低首付15%；普通二套最低25%。文件中的差异化区域二套20%后来由2026年359号进一步调整。",
+      "implementation_note": "保留条款级覆盖关系，不应直接把本文件所有内容当作2026年的完整规则。"
+    },
+    {
+      "id": "sh-2026-359",
+      "title": "关于优化本市房地产政策措施的通知",
+      "document_number": "沪建房管联〔2026〕359号",
+      "url": "https://zjw.sh.gov.cn/jsgl/20260820/82df5e3bf87845ed903492dc5d495574.html",
+      "publisher": "上海市住房和城乡建设管理委员会",
+      "published_at": "2026-08-20",
+      "effective_from": "2026-08-21",
+      "effective_to": null,
+      "topics": ["二套商贷首付", "公积金提取", "以旧换新补贴"],
+      "verified_summary": "外环外（含原差异化区域）二套商贷最低首付改为15%；公积金首付提取扩至新建现房。合条件外环外新房置换可申请贷款额1%、每套最多5万元补贴；卖出外环内二手住房还有3万元条款。",
+      "time_limited_rules": {"trade_in_subsidy_end": "2027-03-31", "loan_subsidy_total_pool_yuan": 200000000, "subject_to_remaining_pool": true},
+      "implementation_note": "贷款最低首付不等于客户已获准该比例。补贴需核验新房网签、旧房转移登记前后1年、区域及额度剩余；不得直接从应付首付中扣除尚未到账补贴。"
+    },
+    {
+      "id": "sh-gjj-2026-1",
+      "title": "关于优化本市住房公积金个人住房贷款政策的通知（附热点问答）",
+      "document_number": "沪公积金管委会〔2026〕1号",
+      "url": "https://www.shanghai.gov.cn/xbhygq/20260228/87e93e4c373c4bfe81af5557a77d2e70.html",
+      "publisher": "上海市人民政府门户网站／上海发布",
+      "published_at": "2026-02-25",
+      "effective_from": "2026-02-26",
+      "effective_to": null,
+      "topics": ["公积金额度", "公积金首二套认定"],
+      "verified_summary": "首套个人/家庭基本上限100/200万元，补充公积金最多另加20/40万元；二套基本80/160万元，补充同样最多另加20/40万元。多子女加20%、合条件绿色新房加15%，可叠加35%。本市无房认首套，有1套认二套；未清公积金贷款等情形不予贷款。",
+      "implementation_note": "这些是政策上限，实际额度还取决于缴存、余额、还款能力等；禁止直接将240万元自动分配给所有客户。"
+    },
+    {
+      "id": "sh-qualification-check",
+      "title": "购房资格核验相关一网通办事项",
+      "url": "https://zwdt.sh.gov.cn/govPortals/bsfw/item/408a8ae0-76c1-47ec-8b90-c9b5c6d8b977",
+      "publisher": "上海一网通办",
+      "published_at": null,
+      "effective_from": null,
+      "effective_to": null,
+      "topics": ["资格最终核验", "办理材料"],
+      "verified_summary": "官方办事页列出了2026年75号等核验依据，提供全市办理与官方查询途径。",
+      "implementation_note": "Skill输出预审缺项与依据，实际认购前由官方交易核验和贷款机构分别确认资格。"
+    },
+    {
+      "id": "sh-sales-2026-451",
+      "title": "关于贯彻落实《关于完善商品住房销售制度的通知》的实施意见",
+      "document_number": "沪建房管联〔2026〕451号",
+      "url": "https://fgj.sh.gov.cn/qtgw/20260929/3629d80c2ccf49518cfc86cd7f8d0162.html",
+      "publisher": "上海市房屋管理局",
+      "published_at": "2026-09-29",
+      "effective_from": null,
+      "effective_to": null,
+      "topics": ["预售条件", "现房销售", "交付风险核验"],
+      "verified_summary": "新出让项目、在途项目有不同预售条件和资金监管安排；现房销售项目有首次登记、销售备案等要求。多个条款以2026-08-28为项目时间分界。",
+      "implementation_note": "不要把发布日期统一当作每条规则的起始日；项目需另存土地公告、规划许可、预售许可日期。"
+    },
+    {
+      "id": "sh-newhome-service-2026-119",
+      "title": "关于印发《新房购置“一件事”实施方案》的通知",
+      "document_number": "沪房市场〔2026〕119号",
+      "url": "https://fgj.sh.gov.cn/fdcsc/20260817/22c17f0147a747dc95b62b5ace3825a5.html",
+      "publisher": "上海市房屋管理局",
+      "published_at": "2026-08-17",
+      "effective_from": null,
+      "effective_to": null,
+      "topics": ["交付后材料与办理"],
+      "verified_summary": "围绕新房交付入住集成水电气开户，并提供实测绘与维修资金查询等服务。",
+      "implementation_note": "列入交付办理清单；具体上线状态和个人所需材料仍按一网通办当前指南。"
+    }
+  ],
+  "unverified_or_incomplete": [
+    {"topic": "新房认购积分", "status": "未找到可完整核验且当前有效的官方计分细则与全部例外", "handling": "逐批次采认购规则、社保系数、认购比、入围比、入围线、限售说明及来源；不写死通用分数，不把居住证积分等同于购房积分，也不把历史入围线当作下一批保证。"},
+    {"topic": "当前个人商贷利率", "status": "需银行和客户条件确认", "handling": "测算输入显式传入annual_rate及确认日期；演示利率标注假设，不冒充银行报价。"},
+    {"topic": "公积金实际可贷额及当前执行利率", "status": "未核验到覆盖所有期限/套数/贷款日期的完整利率表及个人额度", "handling": "由已确认值输入，保留政策上限与实际审批值的区分。"},
+    {"topic": "完整沪籍/特殊家庭限购决策", "status": "多份历史与特殊规则需进一步整合", "handling": "首版仅做资料收集、条款检索与缺项提示，不输出确定获批。"}
+  ],
+  "knowledge_fields": ["policy_id", "document_number", "title", "issuing_authority", "source_url", "published_at", "effective_from", "effective_to", "checked_at", "region_scope", "property_type", "household_type", "residency_status", "social_security_or_tax_continuous_months", "residence_permit_years", "homes_owned_in_shanghai", "homes_owned_by_ring", "loan_type", "loan_house_count_definition", "rule_parameters", "exceptions", "superseded_clause_ids", "required_evidence", "verification_status"],
+  "execution_rules": ["资格、认购积分、商贷、公积金、税费分开判断。", "每个数值保留单位、适用日期、来源和确认状态。", "缺少关键条件就列待核实，不用推测值填满。", "报告生成时重查时效性和推荐批次；每次政策更新只覆盖对应条款，保留历史版本。"]
+}
